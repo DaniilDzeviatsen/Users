@@ -19,10 +19,10 @@ public class UserDaoJDBCImpl implements UserDao {
     public void createUsersTable() {
         String sql = """
                 CREATE TABLE users (
-                                         id INT PRIMARY KEY AUTO_INCREMENT,
-                                         username VARCHAR(40) NOT NULL,
-                                         lastname VARCHAR(40),
-                                         age INT
+                 id INT PRIMARY KEY AUTO_INCREMENT,
+                 username VARCHAR(40) NOT NULL,
+                 lastname VARCHAR(40),
+                 age INT
                   );
                 """;
         try (
